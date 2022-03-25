@@ -1,0 +1,393 @@
+* {
+    margin: 0px;
+}
+
+/* Header */
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+.container-header {
+    display: flex;
+    background-color: #e5e5e5;  
+    justify-content: center; 
+
+}
+
+.logo{
+    height: 4vh;
+    display: flex;
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.section-header{
+    display: flex;
+    margin: 10px ;
+    width: 60%;
+}
+
+ p{
+    font-size: 12px;
+    font-family: system-ui;
+    /* font-weight: 500; */
+    line-height: 15px;
+
+}
+.info{
+    display: flex;
+    text-align: left;
+    margin-right: 1rem;
+}
+
+.b-right{
+    margin: auto;
+}
+
+.button-header{
+    cursor: pointer;
+    width: 60px;
+    background: #0178c8;
+    border: none;
+    border-radius: 3px;
+}
+
+.button-header > p {
+    margin: 8px;
+    color: white;
+}
+
+/* Body Hero*/
+
+
+.section-hero{
+    background: linear-gradient(rgba(0, 74, 117, 0.7), rgba(0, 74, 117, 0.7)), 
+    
+    url("./assets/work-desk__dustin-lee.jpg");
+    height: 50vh;
+    width: 100%;
+}
+
+.section-hero .hero-content{
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 30%;
+}
+
+#hero h2 {
+    color: white;
+    font-family: arial;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    
+}
+
+#hero h3 {
+    color:white;
+    margin-bottom: 3px;
+    font-family: arial;
+}
+
+.tagline {
+    margin : 10px 0px;
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
+.button-hero{
+    cursor: pointer;
+    padding: 10px;
+    background: center;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 3px;
+    color: white;
+    font-weight: 500;
+}
+
+.button-hero:hover {
+    background-color: white;
+    color: navy;
+    
+}
+
+
+
+/* Highlights Panel */
+
+.highlights-panel {
+    background-color: #e5e5e5;
+    padding: 15px;
+}
+
+.highlights-call{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3% 30%;
+}
+
+.highlights-call h2 {
+    margin-bottom: 10px;
+    font-family: arial;
+    font-weight: 500;
+}
+
+.highlights-call p {
+    font-family: system-ui;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+/* Higlights services */
+
+.highlights-services{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 20px;
+
+}
+
+
+.card{
+    border: 1px solid;
+    border-color: silver;
+    margin: 10px;
+    padding: 15px;
+    width: 30%;
+}
+
+.card h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    /* margin-bottom: 6px; */
+}
+
+.title{
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title .fa-solid{
+    opacity: 0.2;
+}
+
+/* Footer */
+
+#footer{
+    background-color: #050328;
+}
+
+.section-footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#footer p{
+    color:#9391bf
+}
+
+
+/*Notification */
+
+.notification-panel{
+    background-color: #1682c3;
+    padding: 5px 8px;
+    width: 45%;
+    /* height: 80px; */
+    display: flex;
+    bottom: 0px;
+    position: fixed;
+    opacity: 0.95;
+    flex-direction: column;
+}
+
+#notification h5, #notification p
+ {
+    color: white;
+    font-family: Arial;
+}
+
+#notification .section {
+   padding: 10px;
+}
+
+.notification p{
+    line-height: 15px;
+}
+
+#notification h5{
+    margin-bottom: 5px;
+    font-size: 15px ;
+}
+
+#notification .close {
+    justify-content: end;
+    display: flex;
+    color: white;
+    font-size: 10px; 
+}
+.close-button {
+    cursor: pointer;
+}
+
+/* .hide-close{
+    di
+} */
+
+.form {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.input-notif{
+ width: 65%;
+ padding: 3px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 10px;
+}
+
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    background-color: #f89f01 ;
+    cursor: pointer;
+    padding: 5px 7px;
+    width: 20%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 960px) {
+    .card {
+        width: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+/* Header */
+    .section-header{
+        width: 100%;
+        display: block;
+        padding: 5px;
+    }
+    
+    .section-header p {
+        font-size: 14px;
+        font-weight: 400!important;
+        line-height: 20px;
+    }
+    .button-header {
+        width: unset;
+    }
+
+    .info {
+        margin-bottom: 10px
+    }
+/* Hero     */
+    .section-hero .hero-content {
+        margin: 0 10%;
+    }
+
+    #hero h2 {
+        font-family: system-ui;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    #hero h3 {
+        font-size: 20px;
+        line-height: 30px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .tagline{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #d6e0eaed;
+    }
+
+    .button-hero {
+        margin-top: 10px;
+        padding: 15px;
+    }
+    .highlights-call { 
+        margin : 7% 4%;
+    
+    }
+
+    /* services */
+
+    #services .card {
+        width: 75%;
+        margin: 10px;
+    }
+
+    /* notif */
+    #notification .section {
+        padding: 10px;
+    }
+    .notification-panel {
+        width: unset;
+    }
+
+    #notification h5 { 
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
+    #notification p { 
+        line-height: 20px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .input-notif{
+        width: unset;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .button {
+        margin-left: 0px;
+        width: unset;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}
